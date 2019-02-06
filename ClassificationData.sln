@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2037
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassificationData", "ClassificationData\ClassificationData.csproj", "{C59CE750-24C7-4887-8902-648D81BBB5CA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Code Contracts|Any CPU = Code Contracts|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		No Analysis|Any CPU = No Analysis|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C59CE750-24C7-4887-8902-648D81BBB5CA}.Code Contracts|Any CPU.ActiveCfg = Code Contracts|Any CPU
+		{C59CE750-24C7-4887-8902-648D81BBB5CA}.Code Contracts|Any CPU.Build.0 = Code Contracts|Any CPU
+		{C59CE750-24C7-4887-8902-648D81BBB5CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C59CE750-24C7-4887-8902-648D81BBB5CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C59CE750-24C7-4887-8902-648D81BBB5CA}.No Analysis|Any CPU.ActiveCfg = No Analysis|Any CPU
+		{C59CE750-24C7-4887-8902-648D81BBB5CA}.No Analysis|Any CPU.Build.0 = No Analysis|Any CPU
+		{C59CE750-24C7-4887-8902-648D81BBB5CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C59CE750-24C7-4887-8902-648D81BBB5CA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EDB9BAA9-3213-4D3A-B9AE-5A47E9ADA15B}
+	EndGlobalSection
+EndGlobal
