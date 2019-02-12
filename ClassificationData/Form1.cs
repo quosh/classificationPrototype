@@ -107,5 +107,10 @@ namespace ClassificationData
 			rtbOutput.AppendText(classData.displayJason);
 
 		}
+
+		private void bntJsonDeser_Click(object sender, EventArgs e)
+		{
+
+		}
 	}
 }

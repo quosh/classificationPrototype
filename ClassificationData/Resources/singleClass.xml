@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<invertedHierarchy >
+  <id>_996602611</id>
+  <title>BNF Inverted Hierarchy</title>
+  <drugs>
+     <drug>
+      <id>_111111111</id>
+      <title>drug01</title>
+      <doi>10.18578/BNF.180319471</doi>
+      <bnfCodes>
+        <bnfCode>0205010X0</bnfCode>
+      </bnfCodes>
+      <classifications type="primary">
+        <classification>
+          <id>_222222222</id>
+          <title>drug01</title>
+        </classification>
+      </classifications>
+      <domainOfEffect type="primary">
+        <id>_641405231</id>
+        <name>cardiovascular system</name>
+        <therapeuticUse type="primary">
+          <id>_616056200</id>
+          <use>blood pressure conditions</use>
+          <children>
+            <therapeuticUse>
+              <id>_308028106</id>
+              <use>hypertension</use>
+              <children>
+                <therapeuticUse>
+                  <id>_803422152</id>
+                  <use>pulmonary hypertension</use>
+                </therapeuticUse>
+              </children>
+            </therapeuticUse>
+          </children>
+        </therapeuticUse>
+      </domainOfEffect>
+    </drug>
+  </drugs>
+  </invertedHierarchy>

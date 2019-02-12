@@ -22,12 +22,12 @@ namespace ClassificationData
 		int _drugCount;
 
 		internal XDocument hierarchyXDoc { get; set; }
-		internal List<DrugClass> DrugClassData { get; set; }
+		internal List<DrugClassification> DrugClassData { get; set; }
 
 		public ClassificationDataProducer()
 		{
 			_outputJson = "";
-			DrugClassData = new List<DrugClass>();
+			DrugClassData = new List<DrugClassification>();
 		}
 
 		//Collection<DrugClass> classes = new Collection<DrugClass>();
@@ -88,8 +88,8 @@ namespace ClassificationData
 		{
 				if (!DrugClassData.Any(x => x.Id == classId))
 				{
-					DrugClass drugClass = new DrugClass();
-				    drugClass.Drug = new Collection<DrugInfoSubClass>();
+					DrugClassification drugClass = new DrugClassification();
+				    drugClass.Drug = new Collection<DrugSubClass>();
 
 				    drugClass.Id = classId;
 					drugClass.Name = className;
@@ -102,7 +102,7 @@ namespace ClassificationData
 
 		private void AddDrug(string classId, string drugname, string drugId)
 		{
-			DrugInfoSubClass drug = new DrugInfoSubClass();
+			DrugSubClass drug = new DrugSubClass();
 			drug.Name = drugname;
 			drug.Sid = drugId;
 

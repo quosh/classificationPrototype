@@ -20,8 +20,6 @@ namespace ClassificationData
 		public int drugsAddedToListCount { get { return _drugsAddedToListCount; } set { _drugsAddedToListCount = value; } }
 
 
-
-
 		string _outputJson;
 		string _displayJason;
 		string _inputXml;
@@ -32,7 +30,7 @@ namespace ClassificationData
 		int _drugsAddedToListCount;
 
 		internal XDocument hierarchyXDoc { get; set; }
-		internal List<DrugClass> DrugClassData { get; set; }
+		internal List<DrugClassification> DrugClassData { get; set; }
 
 		public ClassDataProducerV3()
 		{
@@ -45,7 +43,7 @@ namespace ClassificationData
 			_drugsProcessedCount = 0;
 			_drugsAddedToListCount = 0;
 
-			DrugClassData = new List<DrugClass>();
+			DrugClassData = new List<DrugClassification>();
 		}
 
 		internal void processDrugs()
@@ -131,8 +129,8 @@ namespace ClassificationData
 		{
 			if (!DrugClassData.Any(x => x.Id == classId))
 			{
-				DrugClass drugClass = new DrugClass();
-				drugClass.Drug = new Collection<DrugInfoSubClass>();
+				DrugClassification drugClass = new DrugClassification();
+				drugClass.Drug = new Collection<DrugSubClass>();
 
 				drugClass.Id = classId;
 				drugClass.Name = className;
@@ -145,7 +143,7 @@ namespace ClassificationData
 
 		private void AddDrug(string classId, string drugname, string drugId)
 		{
-			DrugInfoSubClass drug = new DrugInfoSubClass();
+			DrugSubClass drug = new DrugSubClass();
 			drug.Name = drugname;
 			drug.Sid = drugId;
 
