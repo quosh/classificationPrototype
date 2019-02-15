@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
-
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 namespace ClassificationData
 {
@@ -110,6 +111,27 @@ namespace ClassificationData
 
 		private void bntJsonDeser_Click(object sender, EventArgs e)
 		{
+
+		}
+
+		private void button3_Click(object sender, EventArgs e)
+		{
+			String _jsonInput = String.Empty;
+
+			if (openFileDialog1.ShowDialog() == DialogResult.OK)
+			{
+				System.IO.StreamReader sr = new
+				   System.IO.StreamReader(openFileDialog1.FileName);
+
+				_jsonInput = sr.ReadToEnd();
+				sr.Close();
+			}
+
+			JToken parsedJson = JToken.Parse(_jsonInput);
+			var _beautified = parsedJson.ToString(Formatting.Indented);
+
+			rtbOutput.Clear();
+			rtbOutput.AppendText(_beautified);
 
 		}
 	}
